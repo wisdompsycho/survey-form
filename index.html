@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title> Coffee Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1 id="title">Coffee Survey Form
+  </h1>
+  <p id="description">Rise and grind, it's coffee time!</p>
+
+  <form method="post" id="survey-form">
+    <fieldset>
+      <label id="name-label">Name <input id="name" type="text" placeholder="Please enter your name" required/> </label>
+      <label id="email-label">Email <input id="email" type="email" placeholder="please enter your email" required/>
+    <label id="number-label">Age <input id="number" type="number" min="18" max="110" placeholder="Please enter your age" />
+   </fieldset>
+   <fieldset>
+     <label value="how">How often do yo drink coffee?
+       <select id="dropdown">
+         <option value="1">Daily</option>
+         <option value="2">Weekly</option>
+         <option value="3">Monthly</option>
+         <option value="4">Occasionally</option>
+         <option value="5">Never</option>
+       </select>
+     </label>
+     
+     <label>When do you drink coffee?</label>
+     
+     <label><input value="morning" id="morning" type="radio" name="account-type"> Morning</label>
+     <label><input value="noon" id="noon" type="radio" name="account-type"> Noon</label>
+     <label><input value="evening" id="evening" type="radio" name="account-type"> Evening</label>
+     <label><input value="night" id="night" type="radio" name="account-type"> Night</label>
+
+    </fieldset>
+    <fieldset>
+      <label>For what reasons do you drink coffee?</label>
+      <label><input type="checkbox" id="drinking-habit" value="drink-habit"/> Drinking habits</label>
+      <label><input type="checkbox" id="release-stress" value="release-stress"/> Release stress</label>
+      <label><input type="checkbox" id="refleshing" value="refleshing"/> Refleshing</label>
+      <label><input type="checkbox" id="Social-occasions" value="social-occasions"/> Social occasions</label>
+      <label><input type="checkbox" id="other" value="other"/> Other</label>
+
+<label value="thoughts">Leave your thoughts here:
+<textarea id="thoughts" value="thoughts" rows="3" cols="30" placeholder="I like drinking coffee because..."></textarea>
+</label>
+      </fieldset>
+<input id= "submit" type="submit" value="Submit" />
+
+
+
+  </form>
+</body>
+
+</html>
